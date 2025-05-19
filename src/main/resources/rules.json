@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "HighAmount",
+    "target": "amount",
+    "operator": "GREATER_THAN",
+    "expected": 1000,
+    "score": 50,
+    "action": "APPROVE"
+  },
+  {
+    "id": 2,
+    "name": "KnowGoodUser",
+    "target": "userId",
+    "operator": "EQUALS",
+    "expected": "bob",
+    "score": -10,
+    "action": "APPROVE"
+  },
+  {
+    "id": 3,
+    "name": "SuspiciousLowAmount",
+    "target": "amount",
+    "operator": "LESS_THAN",
+    "expected": 5,
+    "score": 10,
+    "action": "REVIEW"
+  },
+  {
+    "id": 4,
+    "name": "FromHighRiskCountry",
+    "target": "country",
+    "operator": "EQUALS",
+    "expected": "HU",
+    "score": 40,
+    "action": "DECLINE"
+  },
+  {
+    "id": 5,
+    "name": "LowRiskCountry",
+    "target": "country",
+    "operator": "EQUALS",
+    "expected": "DE",
+    "score": -10,
+    "action": "APPROVE"
+  },
+  {
+    "id": 6,
+    "name": "UserHasGoogleAccount",
+    "target": "registeredSites",
+    "operator": "IN",
+    "expected": "google",
+    "score": -5,
+    "action": "APPROVE"
+  },
+  {
+    "id": 7,
+    "name": "UserHasFacebookAccount",
+    "target": "registeredSites",
+    "operator": "IN",
+    "expected": "facebook",
+    "score": -5,
+    "action": "APPROVE"
+  },
+  {
+    "id": 8,
+    "name": "EmailDomainFlagged",
+    "target": "email",
+    "operator": "IN",
+    "expected": "@fraud.com",
+    "score": 25,
+    "action": "DECLINE"
+  },
+  {
+    "id": 9,
+    "name": "SketchySite",
+    "target": "registeredSites",
+    "operator": "IN",
+    "expected": "mysketchysite",
+    "score": 70,
+    "action": "REVIEW"
+  },
+  {
+    "id": 10,
+    "name": "KnownBadIp",
+    "target": "ip",
+    "operator": "EQUALS",
+    "expected": "6.6.6.6",
+    "score": 0,
+    "action": "DECLINE"
+  }
+]

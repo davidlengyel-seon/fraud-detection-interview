@@ -1,0 +1,46 @@
+[
+  {
+    "id": "tx1001",
+    "userId": "alice",
+    "email": "alice@example.com",
+    "amount": 1500,
+    "country": "DE",
+    "timestamp": "2025-05-19T11:09:39.468340Z",
+    "metadata": {
+      "ip": "1.1.1.1"
+    }
+  },
+  {
+    "id": "tx1002",
+    "userId": "bob",
+    "email": "bob@example.com",
+    "amount": 1000,
+    "country": "US",
+    "timestamp": "2025-05-19T11:04:39.468340Z",
+    "metadata": {
+      "ip": "1.2.3.4"
+    }
+  },
+  {
+    "id": "tx1003",
+    "userId": "carol",
+    "email": "carol@example.com",
+    "amount": 100,
+    "country": "DE",
+    "timestamp": "2025-05-19T11:04:39.468340Z",
+    "metadata": {
+      "ip": "5.6.7.8"
+    }
+  },
+  {
+    "id": "tx1004",
+    "userId": "dan",
+    "email": "dan@example.com",
+    "amount": 4,
+    "country": "HU",
+    "timestamp": "2025-05-19T11:04:39.468340Z",
+    "metadata": {
+      "ip": "6.6.6.6"
+    }
+  }
+]
