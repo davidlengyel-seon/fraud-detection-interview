@@ -1,0 +1,6 @@
+language = "java"
+run = "mvn exec:java"
+
+[nix]
+channel = "stable-24_05"
+packages = ["openjdk21", "maven"]
